@@ -7,6 +7,7 @@
 #include <Eigen/Dense>
 //#include <Eigen/SVD>
 #include <iostream>
+#include <cstdlib>
 
 #define GRAVITY 9.80665
 #define MAX_DOF 50U

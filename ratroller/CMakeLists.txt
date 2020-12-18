@@ -34,7 +34,7 @@ file(GLOB AD_SRC
     "src/dynamics_manager.cpp"
     "src/mujoco_interface.cpp"
     "src/link.cpp"
-    "src/ratroller.cpp"
+    "src/ratroller.cpp" `
     "src/terminal.cpp"
     )
 

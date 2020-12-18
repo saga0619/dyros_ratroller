@@ -30,7 +30,6 @@
 #include <Eigen/Dense>
 #include <Eigen/Eigenvalues>
 
-#include <cstdlib>
 #include <cmath>
 
 namespace RedSVD

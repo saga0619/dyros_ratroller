@@ -1,6 +1,6 @@
 #include "ratroller/ratroller.h"
 #include "ratroller/terminal.h"
-#include "ratroller/redsvd.h"
+//#include "ratroller/redsvd.h"
 #include <fstream>
 
 std::mutex mtx;

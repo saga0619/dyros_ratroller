@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>DyrosRedWidget</class>
+    <widget class="QWidget" name="DyrosRedWidget">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>762</width>
+                <height>495</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Dyros Red UI</string>
+        </property>
+        <widget class="QFrame" name="frame">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>230</y>
+                    <width>361</width>
+                    <height>221</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="horizontalLayoutWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>32</y>
+                        <width>251</width>
+                        <height>163</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_3">
+                            <item>
+                                <widget class="QLabel" name="label_4">
+                                    <property name="text">
+                                        <string>COM pos</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_12">
+                                    <property name="text">
+                                        <string>Height</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_21">
+                                    <property name="text">
+                                        <string>angle</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_5">
+                                    <property name="text">
+                                        <string>Traj Time</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label_13">
+                                    <property name="text">
+                                        <string>mode</string>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_4">
+                            <item>
+                                <widget class="QLineEdit" name="text_pos">
+                                    <property name="toolTip">
+                                        <string>float between 0~1. 0 - closer to right foot, 1 - closer to left foot.</string>
+                                    </property>
+                                    <property name="text">
+                                        <string>0.5</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="text_height">
+                                    <property name="text">
+                                        <string>0.9</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="text_angle">
+                                    <property name="text">
+                                        <string>0</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="text_time">
+                                    <property name="toolTip">
+                                        <string>Processing time of COM command</string>
+                                    </property>
+                                    <property name="text">
+                                        <string>1</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QComboBox" name="comboBox">
+                                    <item>
+                                        <property name="text">
+                                            <string>COM only</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Pelvis with Arms</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Pelvis only</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Pelvis COM combined</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Pelvis COM combined + Upperbody rotate 90</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Pelvis COM combined + Upperbody rotation hold</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>right hand rotation hold with z axis test</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>pelv_COM control + arms joint control</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>pelv_COM control + arms task control</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>pelv_COM control + Upperbody rotation + arms hold control</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>multi contact</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>wall_holding_test 1</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>wall_holding_test 2</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>wall_holding_test 3</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>single support right</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>zmp control test</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>zmp control test 2</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>zmp control test 3 - mpc</string>
+                                        </property>
+                                    </item>
+                                </widget>
+                            </item>
+                        </layout>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>131</width>
+                        <height>17</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>COM mover</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="com_send_button">
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>90</y>
+                        <width>71</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SEND</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QFrame" name="frame_2">
+            <property name="geometry">
+                <rect>
+                    <x>580</x>
+                    <y>40</y>
+                    <width>151</width>
+                    <height>141</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>10</y>
+                        <width>111</width>
+                        <height>128</height>
+                    </rect>
+                </property>
+                <property name="windowTitle">
+                    <string>Dyros Red UI</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                        <widget class="QPushButton" name="gravity_button">
+                            <property name="text">
+                                <string>Gravity</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="task_button">
+                            <property name="text">
+                                <string>Task</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="contact_button">
+                            <property name="text">
+                                <string>Contact</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="data_button">
+                            <property name="text">
+                                <string>Show Data</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+        <widget class="QFrame" name="frame_3">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>40</y>
+                    <width>171</width>
+                    <height>171</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_2">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>40</y>
+                        <width>91</width>
+                        <height>111</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                    <item>
+                        <widget class="QLabel" name="label">
+                            <property name="autoFillBackground">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_2">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_3">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="verticalLayoutWidget_5">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>40</y>
+                        <width>31</width>
+                        <height>111</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                    <item>
+                        <widget class="QLabel" name="label_7">
+                            <property name="text">
+                                <string>x :</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_8">
+                            <property name="text">
+                                <string>y :</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_9">
+                            <property name="text">
+                                <string>z :</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_10">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>10</y>
+                        <width>91</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>COM position</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QFrame" name="frame_4">
+            <property name="geometry">
+                <rect>
+                    <x>580</x>
+                    <y>270</y>
+                    <width>151</width>
+                    <height>151</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_3">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>40</y>
+                        <width>111</width>
+                        <height>101</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <item>
+                        <widget class="QPushButton" name="pause_button">
+                            <property name="text">
+                                <string>PAUSE</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="slowmotion_button">
+                            <property name="text">
+                                <string>SlowMotion</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="reset_button">
+                            <property name="text">
+                                <string>RESET</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_11">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>10</y>
+                        <width>111</width>
+                        <height>17</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>SIM command</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QFrame" name="frame_5">
+            <property name="geometry">
+                <rect>
+                    <x>210</x>
+                    <y>40</y>
+                    <width>171</width>
+                    <height>171</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_4">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>40</y>
+                        <width>91</width>
+                        <height>111</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                    <item>
+                        <widget class="QLabel" name="label_14">
+                            <property name="autoFillBackground">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_15">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_16">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="verticalLayoutWidget_6">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>40</y>
+                        <width>31</width>
+                        <height>111</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                    <item>
+                        <widget class="QLabel" name="label_17">
+                            <property name="text">
+                                <string>x :</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_18">
+                            <property name="text">
+                                <string>y :</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_19">
+                            <property name="text">
+                                <string>z :</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_20">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>9</y>
+                        <width>101</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Pelvis position</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QFrame" name="frame_6">
+            <property name="geometry">
+                <rect>
+                    <x>400</x>
+                    <y>40</y>
+                    <width>171</width>
+                    <height>121</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_7">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>40</y>
+                        <width>91</width>
+                        <height>71</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                        <widget class="QLabel" name="label_22">
+                            <property name="autoFillBackground">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_23">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="verticalLayoutWidget_8">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>40</y>
+                        <width>31</width>
+                        <height>71</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <item>
+                        <widget class="QLabel" name="label_25">
+                            <property name="text">
+                                <string>x :</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_26">
+                            <property name="text">
+                                <string>y :</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_28">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>9</y>
+                        <width>101</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>ZMP position</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QFrame" name="frame_7">
+            <property name="geometry">
+                <rect>
+                    <x>400</x>
+                    <y>170</y>
+                    <width>171</width>
+                    <height>121</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_9">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>40</y>
+                        <width>91</width>
+                        <height>71</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                    <item>
+                        <widget class="QLabel" name="label_24">
+                            <property name="autoFillBackground">
+                                <bool>false</bool>
+                            </property>
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_27">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="verticalLayoutWidget_10">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>40</y>
+                        <width>31</width>
+                        <height>71</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <item>
+                        <widget class="QLabel" name="label_29">
+                            <property name="text">
+                                <string>x :</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_30">
+                            <property name="text">
+                                <string>y :</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_31">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>9</y>
+                        <width>101</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>CP position</string>
+                </property>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

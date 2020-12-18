@@ -1,0 +1,15 @@
+<library path="src">
+  <class name="ratrollerGUI" type="ratroller_gui.ratroller_gui.ratrollerGuiPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      GUI plugin for dyros red humanoid 
+    </description>
+    <qtgui>
+      <group>
+        <label>RED gui</label>
+      </group>
+      <label>Dyros Red GUI</label>
+      <icon type="file">resource/Dyros_Logo3.png</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

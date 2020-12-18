@@ -1,0 +1,13 @@
+<launch>
+  <arg name="debug" default="false"/>
+  <arg name="rviz" default="false"/>
+  <arg name="controller" default="true" />
+  <arg name="gui" default="true"/>
+
+  <node name="mujoco_ros" pkg="mujoco_ros" type="mujoco_ros" required="true" respawn="false" output="screen">
+    <param name="license" type="string" value="$(find dyros_red_description)/../../../../mjkey.txt" />
+    <param name="model_file" type="string" value="$(find dyros_red_description)/mujoco_model/dyros_red_robot.xml"/>
+  </node>
+
+</launch>
+

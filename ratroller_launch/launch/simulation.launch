@@ -1,0 +1,27 @@
+<launch>
+  <arg name="debug" default="false"/>
+  <arg name="rviz" default="false"/>
+  <arg name="controller" default="true" />
+  <arg name="gui" default="true"/>
+  <arg name="run_mode" default="simulation"/>
+  <arg name="ncurse" default="false"/>
+
+  <node name="mujoco_ros" pkg="mujoco_ros" type="mujoco_ros" required="true" respawn="false" output="screen">
+    <param name="license" type="string" value="$(find ratroller_description)/../../../../mjkey.txt" />
+    <param name="model_file" type="string" value="$(find ratroller_description)/mujoco_model/dyros_red_robot.xml"/>
+  </node>
+
+  <group if="$(arg controller)">
+    <node name="ratroller" pkg="ratroller" type="ratroller" output="screen">
+      <param name="run_mode" value="$(arg run_mode)"/>
+      <param name="debug" value="$(arg debug)" />
+      <param name="rviz_pub" value="$(arg rviz)"/>
+      <param name="ncurse" value="$(arg ncurse)"/>
+    </node>
+  </group>
+
+  <group if="$(arg gui)">
+    <node name="ratroller_gui" pkg="ratroller_gui" type="ratroller_gui" output="screen" />
+  </group>
+</launch>
+
